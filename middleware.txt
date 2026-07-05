@@ -1,0 +1,21 @@
+Middleware ek esa function hota hai jo har route se pehle chalta hai,
+iska matlab sare routes mein koi bhi chale usse pehle middleware chalta hai and
+usmein likha code pahle execute hota hai
+
+Node has a problem that once a control visits a middleware 
+then control by itself cant move to next node/middleware ,
+for taking to next one we need to push it and tha push is called running next
+
+
+Request and Response 
+req me sara data hota hai aane wale user ki request ki taraf ka,
+like it's location, device info.,& other things, 
+res me controls hote hai jinke basis pe hum server se response bhej paate hai 
+next is just a push so that our request moves to the next thing which should be executed.
+
+route parameters- 
+to make any route dynamic you can use : at the place where you want to make it dynamic,
+and to access there value use req.params 
+  
+
+
